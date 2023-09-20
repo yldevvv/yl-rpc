@@ -7,7 +7,7 @@ RegisterNetEvent('yl_discord_presence:get_data', function()
     local replacements = {
         ["{Citizens}"] = #activePlayers .. "/" .. maxServerCapacity,
         ["{ID}"] = source,
-        ["{NAME}"] = playerName,
+        ["{NAME}"] = playerName, 
     }
 
     local pattern = "{(.-)}"
